@@ -11,22 +11,56 @@
     <style>
         body {
             scroll-behavior: smooth;
+            background-color: #0f172a;
+            color: #e5e7eb;
         }
+
+        .navbar {
+            background-color: #020617 !important;
+        }
+
         .hero {
-            background: linear-gradient(135deg, #0d6efd, #6610f2);
-            color: white;
-            padding: 120px 0;
+            background: linear-gradient(135deg, #1e3a8a, #4c1d95);
+            padding: 130px 0;
         }
+
+        .section-dark {
+            background-color: #020617;
+        }
+
+        .section-soft-dark {
+            background-color: #020617;
+        }
+
         .badge-skill {
             font-size: 0.9rem;
-            margin: 4px;
+            margin: 5px;
+            padding: 8px 12px;
+        }
+
+        .card {
+            background-color: #020617;
+            color: #e5e7eb;
+            border: 1px solid #1e293b;
+        }
+
+        .card-text {
+            color: #cbd5f5;
+        }
+
+        footer {
+            background-color: #000;
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
         <a class="navbar-brand fw-bold" href="#">Deepanshu Gupta</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -43,46 +77,54 @@
     </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero text-center">
+<!-- Hero -->
+<section class="hero text-center text-white">
     <div class="container">
         <h1 class="display-4 fw-bold">Deepanshu Gupta</h1>
         <p class="lead mt-3">
-            🚀 Full Stack Developer (MERN) | Java Backend | SQL | DSA
+            🚀 Full Stack Developer (MERN Technologies)<br>
+            Java Backend | SQL | DSA
         </p>
         <a href="#projects" class="btn btn-light btn-lg mt-4">View Projects</a>
     </div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="py-5">
+<!-- About -->
+<section id="about" class="py-5 section-dark">
     <div class="container">
         <h2 class="text-center mb-4">👋 About Me</h2>
-        <p class="text-center text-muted mx-auto" style="max-width: 850px;">
-            Full stack developer with a strong focus on backend engineering and scalable system design.
-            I build complete web applications using <strong>Java and MERN technologies</strong>,
-            working across APIs, databases, and responsive frontends.
-            I enjoy solving DSA problems, optimizing performance, and writing clean,
-            maintainable code—one bug at a time 🐛⚙️.
+        <p class="text-center text-secondary mx-auto" style="max-width: 900px;">
+            I am a <strong>Full Stack Developer specializing in MERN technologies</strong>
+            with strong backend expertise in Java and SQL.
+            I enjoy building complete web applications—from designing REST APIs
+            and database schemas to developing responsive frontend interfaces.
+            Passionate about problem-solving, clean architecture, and writing
+            scalable, maintainable code ⚙️🐛.
         </p>
     </div>
 </section>
 
-<!-- Skills Section -->
-<section id="skills" class="bg-light py-5">
+<!-- Skills -->
+<section id="skills" class="py-5 section-soft-dark">
     <div class="container text-center">
-        <h2 class="mb-4">🛠 Skills</h2>
+        <h2 class="mb-4">🛠 Skills & Technologies</h2>
 
         <!-- Backend -->
         <span class="badge bg-primary badge-skill">Java</span>
         <span class="badge bg-secondary badge-skill">SQL</span>
-        <span class="badge bg-success badge-skill">Backend Development</span>
+        <span class="badge bg-success badge-skill">REST APIs</span>
+        <span class="badge bg-danger badge-skill">Backend Architecture</span>
 
-        <!-- MERN Stack -->
+        <!-- MERN -->
         <span class="badge bg-dark badge-skill">MongoDB</span>
         <span class="badge bg-info text-dark badge-skill">Express.js</span>
-        <span class="badge bg-warning text-dark badge-skill">React</span>
+        <span class="badge bg-warning text-dark badge-skill">React.js</span>
         <span class="badge bg-success badge-skill">Node.js</span>
+
+        <!-- Frontend -->
+        <span class="badge bg-primary badge-skill">HTML</span>
+        <span class="badge bg-secondary badge-skill">CSS</span>
+        <span class="badge bg-info text-dark badge-skill">Bootstrap</span>
 
         <!-- Core -->
         <span class="badge bg-danger badge-skill">DSA</span>
@@ -91,8 +133,8 @@
     </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="py-5">
+<!-- Projects -->
+<section id="projects" class="py-5 section-dark">
     <div class="container">
         <h2 class="text-center mb-5">📂 Projects</h2>
         <div class="row g-4">
@@ -102,8 +144,8 @@
                     <div class="card-body">
                         <h5 class="card-title">N-Queens Solver</h5>
                         <p class="card-text">
-                            Java-based backtracking solution demonstrating recursion,
-                            optimization, and constraint handling.
+                            Java-based backtracking solution showcasing recursion,
+                            optimization, and constraint-based problem solving.
                         </p>
                     </div>
                 </div>
@@ -112,10 +154,11 @@
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Full Stack MERN Application</h5>
+                        <h5 class="card-title">Full Stack MERN Web App</h5>
                         <p class="card-text">
-                            End-to-end web application using MongoDB, Express, React,
-                            and Node.js with REST APIs and database integration.
+                            Complete MERN application with React frontend,
+                            Node & Express backend, MongoDB database,
+                            and RESTful API integration.
                         </p>
                     </div>
                 </div>
@@ -126,8 +169,8 @@
                     <div class="card-body">
                         <h5 class="card-title">DSA & Backend Practice</h5>
                         <p class="card-text">
-                            Algorithmic problem-solving and backend logic experiments
-                            focused on performance and clean architecture.
+                            Regular practice of algorithms, data structures,
+                            and backend logic focused on performance and scalability.
                         </p>
                     </div>
                 </div>
@@ -137,8 +180,8 @@
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="bg-dark text-white py-5">
+<!-- Contact -->
+<section id="contact" class="py-5 section-soft-dark">
     <div class="container text-center">
         <h2 class="mb-4">🔗 Connect With Me</h2>
         <p>
@@ -147,19 +190,15 @@
                 github.com/Deepanshu0018
             </a>
         </p>
-        <p>
-            LinkedIn:
-            <span class="text-muted">Add your LinkedIn profile</span>
-        </p>
     </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-black text-center text-secondary py-3">
+<footer class="text-center text-secondary py-3">
     © 2026 Deepanshu Gupta
 </footer>
 
-<!-- Bootstrap JS CDN -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
